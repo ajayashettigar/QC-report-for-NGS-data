@@ -77,7 +77,7 @@ To run this application locally, follow these steps:
 
 ## Usage
 
-1. **Access the Application**: Open a web browser and go to `http://http://172.18.110.135:5003`.
+1. **Access the Application**: Open a web browser and go to `http://172.18.110.135:5003`.
 2. **Upload Files**: Select "single-end" or "paired-end" to upload your files. If you do not have files, then select "use demo data" to use default demo files.
 3. **Generate Reports**: After uploading, the application will process the files and generate FastQC reports. I have also included the provision for performing MultiQC if the user choose to.
 4. **View and Download Reports**: You can view and download all reports and files in a zip archive.
