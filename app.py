@@ -17,6 +17,14 @@ os.makedirs(FASTQC_REPORT_FOLDER, exist_ok=True)
 os.makedirs(MULTIQC_REPORT_FOLDER, exist_ok=True)
 os.makedirs(DEMO_DATA_FOLDER, exist_ok=True)
 
+# Utility function to create directories
+def create_directories():
+    os.makedirs(UPLOAD_FOLDER, exist_ok=True)
+    os.makedirs(FASTQC_REPORT_FOLDER, exist_ok=True)
+    os.makedirs(MULTIQC_REPORT_FOLDER, exist_ok=True)
+    os.makedirs('result', exist_ok=True)  # If you also want to create the 'result' directory
+
+
 # Utility function to clear directory contents
 def clear_directory(folder):
     if os.path.exists(folder):
@@ -38,6 +46,9 @@ def initial_page():
     clear_directory('fastqc_report')
     clear_directory('multiqc_report')
     clear_directory('result')
+
+    # Recreate the necessary directories
+    create_directories()
 
     # Render the initial page template
     return render_template('index.html')
