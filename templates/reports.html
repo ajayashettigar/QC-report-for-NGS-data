@@ -8,7 +8,7 @@
 <h2>Here are the html links to view the generated fastqc reports:</h2>
 <ul>
   {% for report in reports %}
-    <li><a href="{{ url_for('view_multiqc_report', filename=fastqc_report) }}">{{ report }}</a></li>
+    <li><a href="{{ url_for('view_fastqc_report', filename=report) }}">{{ report }}</a></li>
   {% endfor %}
 </ul>
 <hr>
