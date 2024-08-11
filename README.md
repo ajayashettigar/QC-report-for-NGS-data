@@ -57,29 +57,32 @@ To run this application locally, follow these steps:
 
 2. **Set Up a Virtual Environment**:
     ```bash
-    python -m venv venv
-    source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+    python -m virtualenv venv
+    source env/bin/activate  # On Windows use `venv\Scripts\activate`
     ```
 
 3. **Install Required Packages**:
     ```bash
-    pip install -r requirements.txt
+    pip install flask
+    pip install subprocess
+    pip install shutil
+    pip install zipfile
     ```
 
 4. **Run the Application**:
     ```bash
     python app.py
     ```
-    The application will start on `http://localhost:5000`.
+    The application will start on `http://localhost:5003`.
 
 ## Usage
 
-1. **Access the Application**: Open a web browser and go to `http://localhost:5000`.
-2. **Upload Files**: Select "single-end", "paired-end", or "demo-data" to upload your files.
+1. **Access the Application**: Open a web browser and go to `http://http://172.18.110.135:5003`.
+2. **Upload Files**: Select "single-end" or "paired-end" to upload your files. If you do not have files, then select "use demo data" to use default demo files.
 3. **Generate Reports**: After uploading, the application will process the files and generate FastQC reports. I have also included the provision for performing MultiQC if the user choose to.
 4. **View and Download Reports**: You can view and download all reports and files in a zip archive.
 
-## Contributing
+## Collaorations!
 
 Contributions are welcome! If you have suggestions or improvements, feel free to open an issue or submit a pull request.
 
