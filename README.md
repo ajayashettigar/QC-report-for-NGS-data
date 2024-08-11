@@ -82,7 +82,7 @@ To run this application locally, follow these steps:
 3. **Generate Reports**: After uploading, the application will process the files and generate FastQC reports. I have also included the provision for performing MultiQC if the user choose to.
 4. **View and Download Reports**: You can view and download all reports and files in a zip archive.
 
-## Collaorations!
+## Collaborations!
 
 Contributions are welcome! If you have suggestions or improvements, feel free to open an issue or submit a pull request.
 
