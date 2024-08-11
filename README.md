@@ -23,7 +23,9 @@ Welcome to my first Flask web application! This project is designed to help user
 **Description**: If the user chooses MultiQC, those reports will be generated along with a provision for the user to download all the reports.
 
 ## 5. Download Reports Page
-![Download Reports Page](images/img5.png)(images/img6.png)
+
+![Download Reports Page - Step 1](images/img5.png)
+![Download Reports Page - Step 2](images/img6.png)
 **Description**: If the user doesn't choose the MultiQC step, they will be redirected to a page where they can download all the reports.
 
 ## Features
