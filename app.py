@@ -144,6 +144,19 @@ def list_reports():
     # Render FastQC reports page
     return render_template('reports.html', reports=report_files, read_type=read_type)
 
+@app.route('/view_fastqc_report/<filename>')
+def view_fastqc_report(filename):
+    # Define the path to the MultiQC report folder
+    fastqc_report_path = os.path.join(FASTQC_REPORT_FOLDER, filename)
+    
+    # Check if the file exists
+    if os.path.exists(fastqc_report_path):
+        # Serve the file
+        return send_from_directory(FASTQC_REPORT_FOLDER, filename)
+    else:
+        # Return a 404 error if the file is not found
+        os.abort(404)
+
 @app.route('/view_multiqc_report/<filename>')
 def view_multiqc_report(filename):
     # Define the path to the MultiQC report folder
