@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!doctype html>
+<title>FastQC Reports</title>
+<h1>FastQC Reports</h1>
+<hr>
+<h2>Here are the html links to view the generated fastqc reports:</h2>
+<ul>
+  {% for report in reports %}
+    <li><a href="{{ url_for('view_multiqc_report', filename=fastqc_report) }}">{{ report }}</a></li>
+  {% endfor %}
+</ul>
+<hr>
+<h2>MultiQC??</h2>
+<form method="POST">
+  <label for="multiqc">Do you want to generate MultiQC reports for the raw data?</label>
+  <select name="multiqc" id="multiqc">
+    <option value="yes">Yes</option>
+    <option value="no">No</option>
+  </select><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+{% endblock %}

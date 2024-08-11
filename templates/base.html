@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <h1>NGS Data Quality Report Generator</h1>
+        </div>
+    </header>
+    
+    <main>
+        {% block content %}
+
+        <hr>
+        
+        {% endblock %}
+    </main>
+
+    <footer>
+        <!-- Optional footer content -->
+    </footer>
+</body>
+</html>
+

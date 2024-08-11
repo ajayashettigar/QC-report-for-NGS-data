@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!doctype html>
+<title>Select Read Type</title>
+<h1>Select Read Type</h1>
+<hr>
+<form method="POST">
+  <label for="read_type">Choose the type of reads:</label>
+  <select name="read_type" id="read_type">
+    <option value="paired">Paired-end</option>
+    <option value="single">Single-end</option>
+    <option value="demo">Use Demo Data</option>
+  </select><br><br>
+  <input type="submit" value="Submit">
+</form>
+{% endblock %}
