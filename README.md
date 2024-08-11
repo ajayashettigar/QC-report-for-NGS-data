@@ -62,9 +62,9 @@ Contributions are welcome! If you have suggestions or improvements, feel free to
 ## Acknowledgements
 This project uses the following tools and libraries:
 
-### FastQC: A quality control tool for high-throughput sequence data. [LICENSE](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/)
-### MultiQC: Aggregates results from multiple quality control tools into a single report. [LICENSE](https://multiqc.info/)
-### Flask: A lightweight WSGI web application framework. [LICENSE](https://flask.palletsprojects.com/en/3.0.x/)
+### FastQC: A quality control tool for high-throughput sequence data. [cite](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/)
+### MultiQC: Aggregates results from multiple quality control tools into a single report. [cite](https://multiqc.info/)
+### Flask: A lightweight WSGI web application framework. [cite](https://flask.palletsprojects.com/en/3.0.x/)
 
 ## Contact
 
